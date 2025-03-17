@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرة ذاتية - أيوب أبو عائشة</title>
+    <style>
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+            border: 4px solid #2a6d9b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            pointer-events: none; /* يمنع التفاعل المباشر مع الصورة */
+            user-select: none; /* يمنع تحديد الصورة */
+        }
+        h1 {
+            color: #1a3c66;
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .contact-info span {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        h2 {
+            color: #2a6d9b;
+            font-size: 24px;
+            margin-top: 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #e0eafc;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #2a6d9b;
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+        }
+        p, li {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        ul {
+            list-style-type: none;
+            padding-right: 20px;
+        }
+        ul li {
+            padding: 8px 0;
+            position: relative;
+        }
+        ul li::before {
+            content: '✔';
+            color: #2a6d9b;
+            position: absolute;
+            right: -20px;
+        }
+        .section {
+            background: #f9fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries لتعديل التصميم على الهواتف */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                margin: 0 0 15px 0;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .contact-info {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p, li {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            ul li::before {
+                right: -15px;
+            }
+            .section {
+                padding: 10px;
+            }
+        }
+
+        /* تعديل إضافي للوضع الأفقي على الهاتف */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+                margin-left: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .contact-info {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p, li {
+                font-size: 12px;
+                line-height: 1.5;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="IMG_20250313_083810.jpg" alt="صورة شخصية" class="profile-pic">
+            <h1>أيوب أبو عائشة عمران عمر</h1>
+        </div>
+        <div class="contact-info">
+            <span>طالب ثانوية – مبرمج مواقع ويب</span> | 
+            <span>0944661136</span> | 
+            <span>ayoubly1111@gmail.com</span> | 
+            <span>ترهونة، ليبيا</span> | 
+            <span>تاريخ الميلاد: 15 نوفمبر 2008</span>
+        </div>
+
+        <div class="section">
+            <h2>الملف الشخصي</h2>
+            <p>طالب في المرحلة الثانوية شغوف بمجال برمجة المواقع، أسعى لتطوير مهاراتي التقنية وتطبيقها في مشاريع حقيقية. أتمتع بقدرة على حل المشكلات والعمل الذاتي، وأطمح للانضمام إلى فريق يتيح لي النمو والتعلم.</p>
+        </div>
+
+        <div class="section">
+            <h2>المؤهلات التعليمية</h2>
+            <p>طالب في مرحلة الثانوية<br>الموقع: ترهونة، ليبيا<br>الفترة: مستمر حاليًا</p>
+        </div>
+
+        <div class="section">
+            <h2>الخبرات العملية</h2>
+            <p>لا توجد خبرات عملية سابقة</p>
+        </div>
+
+        <div class="section">
+            <h2>المهارات</h2>
+            <ul>
+                <li>برمجة مواقع ويب</li>
+                <li>حل المشكلات</li>
+                <li>التفكير المنطقي</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>المهن التي يمكنني العمل بها حاليًا</h2>
+            <ul>
+                <li>مبرمج مواقع ويب (Web Developer)</li>
+                <li>مبرمج تطبيقات (App Developer)</li>
+                <li>مطور منظومات مبيعات (Sales System Developer)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>الدورات والشهادات</h2>
+            <p>لا توجد دورات حاليًا</p>
+        </div>
+
+        <div class="section">
+            <h2>اللغات</h2>
+            <ul>
+                <li>العربية: ممتاز</li>
+                <li>الإنجليزية: جيد</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>الهوايات والاهتمامات</h2>
+            <ul>
+                <li>حل المشكلات التقنية</li>
+                <li>تعلم البرمجة والتطوير الذاتي</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // منع النقر بزر الفأرة الأيمن على الصورة (للحواسيب)
+        document.querySelector('.profile-pic').addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // منع الضغط المطول على الصورة (للجوالات)
+        document.querySelector('.profile-pic').addEventListener('touchstart', function(e) {
+            e.preventDefault();
+        });
+        document.querySelector('.profile-pic').addEventListener('touchend', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
